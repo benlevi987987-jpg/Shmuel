@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Partizan Style Clone</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- scroll animation lib -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
-  <div class="hero">
-    <h1>Welcome</h1>
-    <p>My personal website</p>
+  <div class="bg"></div>
 
-    <div class="icons">
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174883.png"></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png"></a>
+  <!-- HERO -->
+  <section class="hero">
+    <h1 data-aos="fade-up">WELCOME</h1>
+    <p data-aos="fade-up" data-aos-delay="150">Personal Portfolio Website</p>
+
+    <div class="buttons" data-aos="fade-up" data-aos-delay="300">
+      <a href="#about">Explore</a>
+      <a href="#social">Socials</a>
     </div>
-  </div>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 data-aos="fade-right">About Me</h2>
+    <p data-aos="fade-left">
+      This is a high-end styled landing page inspired by modern neon portfolio designs.
+    </p>
+  </section>
+
+  <!-- SOCIAL -->
+  <section id="social" class="section">
+    <h2 data-aos="fade-right">Socials</h2>
+
+    <div class="socials" data-aos="zoom-in">
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-discord"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with ⚡</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
