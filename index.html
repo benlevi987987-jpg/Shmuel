@@ -1,60 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Partizan Style Clone</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Smuel Official Bio</title>
 
-  <link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-  <!-- icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #0f2a18, #050807);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 
-  <!-- scroll animation lib -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+.container {
+    width: 100%;
+    max-width: 520px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00ff88;
+    object-fit: cover;
+    box-shadow: 0 0 25px #00ff8855;
+}
+
+h1 {
+    margin: 15px 0 5px;
+    font-size: 34px;
+    font-weight: 800;
+    color: #00ff88;
+}
+
+.subtitle {
+    color: #ff7a18;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: rgba(0, 255, 136, 0.08);
+    border: 1px solid rgba(0, 255, 136, 0.25);
+    padding: 15px 18px;
+    border-radius: 14px;
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: #ff7a18;
+    box-shadow: 0 0 15px rgba(255, 122, 24, 0.3);
+}
+
+.card span {
+    font-weight: 600;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+}
+
+.footer {
+    margin-top: 35px;
+    color: #00ff88;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="bg"></div>
+<div class="container">
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1 data-aos="fade-up">WELCOME</h1>
-    <p data-aos="fade-up" data-aos-delay="150">Personal Portfolio Website</p>
+    <!-- תמונת פרופיל (שים קובץ בשם הזה בגיטהאב) -->
+    <img class="profile" src="profile.png" alt="profile"/>
 
-    <div class="buttons" data-aos="fade-up" data-aos-delay="300">
-      <a href="#about">Explore</a>
-      <a href="#social">Socials</a>
-    </div>
-  </section>
+    <h1>Smuel</h1>
+    <div class="subtitle">OFFICIAL BIO</div>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2 data-aos="fade-right">About Me</h2>
-    <p data-aos="fade-left">
-      This is a high-end styled landing page inspired by modern neon portfolio designs.
-    </p>
-  </section>
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/watch?v=SAoEEeHTGjo" target="_blank" style="text-decoration:none;color:white;">
+        <div class="card">
+            <span>ערוץ היוטיוב</span>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+        </div>
+    </a>
 
-  <!-- SOCIAL -->
-  <section id="social" class="section">
-    <h2 data-aos="fade-right">Socials</h2>
+    <!-- Kick -->
+    <a href="https://kick.com/shmuel-8" target="_blank" style="text-decoration:none;color:white;">
+        <div class="card">
+            <span>ערוץ ה-Kick</span>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png">
+        </div>
+    </a>
 
-    <div class="socials" data-aos="zoom-in">
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      <a href="#"><i class="fa-brands fa-discord"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-  </section>
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@dreeamboy_8?_r=1&_t=ZS-97R14om8RqD" target="_blank" style="text-decoration:none;color:white;">
+        <div class="card">
+            <span>ערוץ הטיקטוק</span>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+        </div>
+    </a>
 
-  <footer>
-    <p>Made with ⚡</p>
-  </footer>
+    <!-- Instagram -->
+    <a href="#" target="_blank" style="text-decoration:none;color:white;">
+        <div class="card">
+            <span>אינסטגרם</span>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+        </div>
+    </a>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+    <!-- Discord (רק אחד – מחקתי את של פייבאם כמו שביקשת) -->
+    <a href="https://discord.gg/ucV2DVxQz" target="_blank" style="text-decoration:none;color:white;">
+        <div class="card">
+            <span>שרת הדיסקורד</span>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+        </div>
+    </a>
+
+    <div class="footer">SMUEL EMPIRE</div>
+
+</div>
 
 </body>
 </html>
