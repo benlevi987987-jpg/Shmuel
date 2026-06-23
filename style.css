@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #00ff88, #ff8800);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.icons img {
+  width: 40px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px white);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
