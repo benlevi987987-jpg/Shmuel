@@ -1,4 +1,3 @@
-AOS.init({
-  duration: 1000,
-  once: true
-});
+function openLink(url) {
+    window.open(url, "_blank");
+}
